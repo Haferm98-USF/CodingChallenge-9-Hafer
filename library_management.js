@@ -95,3 +95,23 @@ returnBook(book)
     book._isAvailable = true;
 };
 };
+
+//Task 4: Create a VIP Patron Class that Inherits from Patron
+
+class VIPPatron 
+{
+    constructor(name, priority = true)
+    {
+        this.name = name;
+        this.priority = priority;
+    }
+//OVerriding borrowbook method
+borrowBook(book)
+{
+    if (this.priority = true)
+    {
+        book.isAvailable = false;
+        this.borrowedBooks.push(book);  
+    };
+};;
+}
