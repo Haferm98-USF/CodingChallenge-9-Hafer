@@ -51,7 +51,7 @@ addBook(book)
 
 getAvailableBooks() 
 {
-    return this.books.filter(book => book.isAvailable).lenth;
+    return this.books.filter(book => book.isAvailable).length;
 };
 
 // List the books in a Section
@@ -63,6 +63,11 @@ listBooks()
     }
     )
 };
+// Task 5: Calsulate total books in a section
+calculateTotalBooksAvailable()
+{
+    return this.books.filter(book => book.isAvailable).length;
+}
 
 };
 
