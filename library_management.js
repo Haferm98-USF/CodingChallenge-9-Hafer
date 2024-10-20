@@ -119,4 +119,30 @@ borrowBook(book)
         this.borrowedBooks.push(book);  
     };
 };;
-}
+};
+
+//Task 6: Create and Mangage Sections and Patrons
+
+const fiction = new Section("Fiction");
+const science = new Section("Science");
+
+const book1 = new Book("1984", "George Orwell", "1234567890");
+const book2 = new Book("Brave New World", "Aldous Huxley", "0987654321");
+const book3 = new Book("The Selfish Gene", "Richard Dawkins", "1122334455");
+
+fiction.addBook(book1);
+fiction.addBook(book2);
+science.addBook(book3);
+
+const regularPatron = new Patron("John Doe");
+const vipPatron = new VIPPatron("Jane Smith", true);
+
+regularPatron.borrowBook(book1);
+vipPatron.borrowBook(book1);
+
+regularPatron.returnBook(book1);
+
+fiction.listBooks();
+
+console.log(`Total available books in Fiction: ${fiction.getAvailableBooks()}`);
+console.log(`Total available books in Science: ${science.getAvailableBooks()}`);
