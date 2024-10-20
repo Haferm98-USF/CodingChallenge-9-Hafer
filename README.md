@@ -1,0 +1,2 @@
+# CodingChallenge-9-Hafer
+In this challenge, you will implement a Library Management System using JavaScript classes to handle books, patrons, and library sections. You’ll use Object-Oriented Programming (OOP) concepts such as inheritance, encapsulation, and methods to create a scalable system. This system will allow you to manage book details, handle patrons borrowing and returning books, and calculate the total number of books available in each section.
